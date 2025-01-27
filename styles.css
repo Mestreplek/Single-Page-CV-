@@ -1,19 +1,104 @@
 :root {
-    --color-bg: #1b1b1b;;
-    --color-fg: #fff;
+    --color-bg: #111111;
+    --color-fg: #dedede;
+    --menu: #3a3a3a;
 }
 @media (prefers-color-scheme: light) {
     :root {
         --color-bg: #fff;
-        --color-fg: #000;;
+        --color-fg: #000;
+        --menu: #313131;
     }
+}
+h1  {
+    text-decoration: underline;
 }
 body {
     background: var(--color-bg);
     color: var(--color-fg);
+    font-family: "Reem Kufi";
+}
+.hero {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+
+
+}
+.heading-socials {
+    display: flex;
+
+    align-items: center;
+    gap: 1%;
+    border: solid var(--menu) 2px;
+    border-radius: 10%;
+    width: 300px;
+    margin-left: 15%;
+
+
+}
+.heading-socials button {
+    border: var(--color-fg) solid 1px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background: var(--menu);
+
+}
+
+h2 {
+    color: dodgerblue;
+}
+.contact-info {
+    width: 90%;
+    padding-left: 30%;
+}
+.contact-indent {
+    padding-left: 2%;
+}
+.skills-indent {
+    padding-left: 2%;
+}
+.skills {
+    width: 100%;
+    padding-left: 30%;
+}
+.education-indent {
+    padding-left: 2%;
+}
+.education {
+    padding-left: 30%;
 }
 
 
+
+.fa-square-github {
+    font-size: 40px;
+    cursor: pointer;
+}
+.fa-location-dot {
+    font-size: 20px;
+    padding-top: 10px;
+    background: var(--menu);
+
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.location {
+    height: 50px;
+    display: flex;
+    gap: 5px;
+    align-items: start;
+    justify-items: start;
+    width: 100px;
+    background: rgb(255, 255, 255,0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
 
 
 
